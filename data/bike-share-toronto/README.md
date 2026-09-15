@@ -84,5 +84,4 @@ The City publishes one Excel workbook (or zip file) per year. This dataset parti
 - **`User_Type` and `Bike_Model`.** Both values became one-character codes. A value with no code stops the build rather than being absorbed silently.
 - **Dropped `Trip_Id`.** It represents the operator's own unique identifier, but costs 6.5% of the file and does not provide anything useful for our purposes.
 - **`end_station` fixes.** End stations written as `7130.0` were repaired to `7130`. A blank end station is left blank; some trips were never docked.
-- **Column names were made plain.** `Trip_Duration` became
-  `duration_seconds`, and all other columns were updated to snake_case.
+- **Column names were made plain.** `Trip_Duration` became `duration_seconds`, and all other columns were updated to snake_case.
