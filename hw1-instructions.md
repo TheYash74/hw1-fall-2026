@@ -48,25 +48,27 @@ The following questions will allow you to understand the basic commands for navi
 Some of the questions below pertain to the following directory tree:
 
 ```sh
-/workspaces/hw1-username/
-|-- projects/
-|   |-- project1/
-|   |   |-- data/
-|   |   |   |-- processed_data.csv
-|   |   |   `-- raw_data.txt
-|   |   |-- process.py
-|   |   `-- summary.txt
-|   `-- project2/
-|       |-- notes/
-|       |   `-- meeting-jan-01-2020.txt
-|       `-- summary.txt
-|
-|-- downloads/
-|   `-- joke.jpg
-|
-|-- .gitignore
-|-- junkme.txt
-`-- zipper.py
+/workspaces/
+ └── hw1-username/
+     │
+     ├── projects/
+     │   ├── project1/
+     │   │   ├── process.py
+     │   │   ├── summary.txt
+     │   │   └── data/
+     │   │       ├── raw_data.txt
+     │   │       └── processed_data.csv
+     │   └── project2/
+     │       ├── summary.txt
+     │       └── notes/
+     │           └── meeting-dec-12-2023.txt
+     │
+     ├── downloads/
+     │   └── joke.jpg
+     │
+     ├── .gitignore
+     ├── junkme.txt
+     └── zipper.py
 ```
 
 **Question 1.** If you wanted to read the manual page for the `ls` command, what should you type at the command prompt of a bash shell?
