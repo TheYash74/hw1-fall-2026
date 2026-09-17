@@ -61,7 +61,7 @@ Some of the questions below pertain to the following directory tree:
      │   └── project2/
      │       ├── summary.txt
      │       └── notes/
-     │           └── meeting-dec-12-2023.txt
+     │           └── meeting-jan-01-2020.txt
      │
      ├── downloads/
      │   └── joke.jpg
