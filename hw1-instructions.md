@@ -141,7 +141,7 @@ After reading `README.md` to learn about the `mini-32m data`, be sure to explore
 
 
 
-**Question 2.** First, write a single command to only show the last line of the `ratings.csv` file. Next, what is the movie title for this movie?
+**Question 2.** First, write a single command to only show the last line of the `ratings.csv` file.  Next, using any reasonable means, what is the movie title for this movie?  You should find that the movie is "Corpse Bride (2005)".  
 
 
 **Question 3.** Write a short pipeline of commands to determine the number of movies in the `movies.csv` file. Hint: the first line of the dataset contains the column headers.  When you get it right, your pipeline will output 23144 as the answer.
@@ -251,11 +251,13 @@ A correct pipeline will output:
 and show us that the most common rating is 4.0 stars.
 
 
-**Question 3.** Write a single pipeline of commands to determine which `userId` has rated the most movies, along with the number of ratings they have made.  For this problem, you will likely need to use the default field separator for sort, i.e. whitespace.  When you use sort without specifying the field separator, it defaults to whitespace.  You should find that userId 95481 has rated 4113 movies.
+**Question 3.** Write a single pipeline of commands to determine which `userId` has rated the most movies, along with the number of ratings they have made.  For this problem, you will likely need to use the default field separator for sort, i.e. whitespace.  When you use sort without specifying the field separator, it defaults to whitespace, and the breaks between fields are defined to be between a non-blank character and a blank character, and thus any blanks at the start of the line are part of the first field.  When you sort numerically, numbers may include leading blanks without any issue, which is super handy for this problem.  Hint: you should numerically sort the output of `uniq -c` as part of your solution.
+
+You should find that userId 95481 has rated 4113 movies.
 
 
 
-**Question 4.** What is the title of the movie with the most ratings? Hint: First write a pipeline of commands to determine which `movieId` has the most ratings in `ratings.csv`, then write a single command to output the line of `movies.csv` for this movie.
+**Question 4.** What is the title of the movie with the most ratings? Hint: First write a pipeline of commands to determine which `movieId` has the most ratings in `ratings.csv`, then write a single command to output the line of `movies.csv` for this movie given the movieId you find with your pipeline.
 
 
 **Question 5.** What is the title of the movie that has the most 5.0 star ratings? Hint: First write a pipeline of commands starting with `awk` to determine which `movieId` has the most 5.0 ratings in `ratings.csv`, then write a single command to determine the movie title for this `movieId` in `movies.csv`.
