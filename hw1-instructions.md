@@ -72,22 +72,23 @@ Some of the questions below pertain to the following directory tree:
 ```
 
 **Question 1.** If you wanted to read the manual page for the `ls` command, what should you type at the command prompt of a bash shell?
-
+man ls
 
 **Question 2.** If your current working directory is `hw1-username`, what files does running the command `ls` show?
-
+projects, downloads, junkme.txt, zipper.py
 
 **Question 3.** If your current working directory is `hw1-username`, what option do you add to `ls` to have the file listing include the file `.gitignore`?
-
+-a
 
 **Question 4.** If your current working directory is `hw1-username`, how can you change your working directory to `/workspaces/hw1-username/projects/project1/data` using `cd` and a relative pathname that starts with `projects`?
-
+cd ./projects/project1/data
 
 **Question 5.** If your current working directory is `data`, what is the easiest way to change to its parent directory, and what is its parent directory?
-
+cd ..
+/workspaces/hw1-username/projects/project1
 
 **Question 6.** What is the absolute or full pathname to the `meeting-jan-01-2020.txt` file?
-
+/workspaces/hw1-username/projects/project2/notes/meeting-jan-01-2020.txt
 
 **Question 7.** If your working directory was the `notes` directory, and you ran `less Meeting-Jan-01-2020.txt` what would you expect to happen? Explain why.
 
