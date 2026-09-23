@@ -91,49 +91,49 @@ cd ..
 /workspaces/hw1-username/projects/project2/notes/meeting-jan-01-2020.txt
 
 **Question 7.** If your working directory was the `notes` directory, and you ran `less Meeting-Jan-01-2020.txt` what would you expect to happen? Explain why.
-
+The terminal will open an interactive text viewer which allows you to see the contents of Meeting-Jan-01-2020.txt in pages and scroll using the up/down arrow keys.
 
 **Question 8.** You do not know where you are in the directory tree. What command do you use to see what your current working directory is?
-
+pwd
 
 **Question 9.** If your current working directory is the `notes` directory, where do you end up after entering `cd ../../..`?
-
+hw1-username
 
 **Question 10.** If your current working directory is the `project2` directory, what relative pathname can you use to `cd` to `project1`?
-
+cd ../project1
 
 **Question 11.** If you are in `hw1-username`, give both a relative pathname to `junkme.txt` from `hw1-username` and the full path name for `junkme.txt`.
-
+./junkme.txt
+/workspaces/hw1-username/junkme.txt
 
 **Question 12.** At the command prompt, what key do you press to see your previously entered commands?
-
+up arrow
 
 **Question 13.** You are in `hw1-username` and want to `cd` to the `projects` directory, and have typed `cd p` so far. What key do you press to perform filename completion and have the `cd p` autocomplete to `cd projects/` for you?
-
+tab
 
 **Question 14.** What is the name of the `/` directory when we say it to people (we do not say "forward slash directory")?
-
+Root directory
 
 ## Folder Structure
 
 The following questions will allow you to understand the folder structure of the various datasets. These questions should be answered by writing/using commands rather than by manually viewing the folders.
 
 **Question 1.** You first `cd data` to go inside the directory.  You want to see everything and all the details.  What command do you run/execute?
-
-
+ls -al
 
 **Question 2.** You then `cd mini-32m` to enter the `mini-32m`
 directory.  You want to see the sizes of the files in your current
 directory in a human readable format, e.g. you want to see 1.1M rather
 than 1102171 bytes.  What command do you run?
-
+ls -hl
 
 **Question 3.** As is good practice for a data analyst, you decide to read the `README.md` in `mini-32m`.  What would be the preferred way to read the file inside the terminal, and what is a better way to read it all nicely formatted?
-
-
+less README.md
+To read it formatted, open README.md on GitHub.
 
 **Question 4.** What is the rating scale used in the `ratings.csv` file? (You just need to read the README.md file to find this information.)
-
+5-star rating system
 
 ## Dataset Basics: mini-32m
 
@@ -141,11 +141,11 @@ After reading `README.md` to learn about the `mini-32m data`, be sure to explore
 
 
 **Question 1.** You want to see what the `movies.csv` and `ratings.csv` files look like and decide to look at the first 10 lines of each file.  What commands do you use? 
-
-
+head movies.csv
+head ratings.csv
 
 **Question 2.** First, write a single command to only show the last line of the `ratings.csv` file.  Next, using any reasonable means, what is the movie title for this movie?  You should find that the movie is "Corpse Bride (2005)".  
-
+tail -1 ratings.csv
 
 **Question 3.** Write a short pipeline of commands to determine the number of movies in the `movies.csv` file. Hint: the first line of the dataset contains the column headers.  When you get it right, your pipeline will output 23144 as the answer.
 
