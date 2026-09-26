@@ -146,12 +146,13 @@ head ratings.csv
 
 **Question 2.** First, write a single command to only show the last line of the `ratings.csv` file.  Next, using any reasonable means, what is the movie title for this movie?  You should find that the movie is "Corpse Bride (2005)".  
 tail -1 ratings.csv
+awk -F, -v id="$(tail -1 ratings.csv | cut -d ',' -f2)" '$1 == id {print $2}' movies.csv
 
 **Question 3.** Write a short pipeline of commands to determine the number of movies in the `movies.csv` file. Hint: the first line of the dataset contains the column headers.  When you get it right, your pipeline will output 23144 as the answer.
-
+tail +2 movies.csv | wc -l
 
 **Question 4.** Write a single pipeline of commands to determine the number of unique users in the `ratings.csv` file.  When correct, your pipeline should output `982`.
-
+tail +2 ratings.csv | cut -d ',' -f1 | sort -u | wc -l
 
 ## Dataset Basics: bike-share-toronto
 
